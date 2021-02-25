@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     private float xboundary = 20.0f;
+    public GameObject projectilePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
         
         horizontalInput=Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed );
+
         if (transform.position.x > xboundary)
         {
             transform.position = new Vector3(xboundary, transform.position.y, transform.position.z);
@@ -27,6 +29,11 @@ public class PlayerController : MonoBehaviour
         if (transform.position.x < -xboundary)
         {
             transform.position = new Vector3(-xboundary, transform.position.y, transform.position.z);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
     }
 }
