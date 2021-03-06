@@ -75,6 +75,8 @@ GameObject:
   - component: {fileID: 1849829366811961156}
   - component: {fileID: 1849829367225499831}
   - component: {fileID: 1849829367225499830}
+  - component: {fileID: 5852008922338031284}
+  - component: {fileID: -3354357710243980649}
   m_Layer: 0
   m_Name: Animal_Rooster_Brown
   m_TagString: Untagged
@@ -150,6 +152,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBoundary: 25
   bottomBoundary: -10
+--- !u!65 &5852008922338031284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849829366804584084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.50391, y: 17.93298, z: 24.395819}
+  m_Center: {x: 0.2956295, y: 8.466491, z: -1.3200045}
+--- !u!114 &-3354357710243980649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849829366804584084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993a63332f2cfe444a66339f488cf8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1849829366804587110
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849829366804957646}
   - component: {fileID: 1849829366807761160}
+  - component: {fileID: 1037269510687318417}
   m_Layer: 0
   m_Name: SA_Animals_Rooster_Brown
   m_TagString: Untagged
@@ -962,6 +990,19 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000000834465, y: 0.15565968, z: -1.2086902}
     m_Extent: {x: 3.9085298, y: 8.830184, z: 11.8865185}
   m_DirtyAABB: 0
+--- !u!65 &1037269510687318417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849829366804681156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.8170595, y: 17.660368, z: 23.773039}
+  m_Center: {x: 0.000000834465, y: 8.830173, z: -1.2086902}
 --- !u!1 &1849829366804685432
 GameObject:
   m_ObjectHideFlags: 0

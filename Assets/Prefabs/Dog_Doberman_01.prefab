@@ -4185,6 +4185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6342803210220143055}
   - component: {fileID: 6342803210225794599}
+  - component: {fileID: 3539925623892836304}
   m_Layer: 0
   m_Name: SM_Doberman_01
   m_TagString: Untagged
@@ -4300,6 +4301,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000000007450581, y: -0.027196333, z: 0.09501116}
     m_Extent: {x: 0.039278634, y: 0.106182754, z: 0.13037159}
   m_DirtyAABB: 0
+--- !u!65 &3539925623892836304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6342803210220573111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07855727, y: 0.21236552, z: 0.26074317}
+  m_Center: {x: 0.08099996, y: 0.10618274, z: 0.2001578}
 --- !u!1 &6342803210220574095
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,6 +5676,8 @@ GameObject:
   - component: {fileID: 6342803210229792047}
   - component: {fileID: 6342803210568245983}
   - component: {fileID: 6342803210568245982}
+  - component: {fileID: 2619474377880341689}
+  - component: {fileID: 7359958763216621575}
   m_Layer: 0
   m_Name: Dog_Doberman_01
   m_TagString: Untagged
@@ -5751,7 +5767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188079ed314293449a58fc5c539f7ede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 18
+  speed: 10
 --- !u!114 &6342803210568245982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5766,6 +5782,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBoundary: 25
   bottomBoundary: -10
+--- !u!65 &2619474377880341689
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6342803210220593707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07732797, y: 0.21688351, z: 0.25134423}
+  m_Center: {x: -0.00043852557, y: 0.10304171, z: 0.03598077}
+--- !u!114 &7359958763216621575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6342803210220593707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993a63332f2cfe444a66339f488cf8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6342803210220594211
 GameObject:
   m_ObjectHideFlags: 0
